@@ -8,7 +8,8 @@
     android:background="@drawable/player_bg"
     app:behavior_hideable = "true"
     app:behavior_peekHeight="70dp"
-    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:id="@+id/constraintLayout">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -61,7 +62,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/player_fileName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -85,7 +86,7 @@
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/player_fileName"
         app:srcCompat="@drawable/player_play_btn" />
 
     <ImageButton
@@ -115,6 +116,7 @@
         app:srcCompat="@drawable/player_forward_btn" />
 
     <SeekBar
+        android:id="@+id/player_seekbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
